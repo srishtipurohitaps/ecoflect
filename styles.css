@@ -115,30 +115,10 @@ footer {
 
 /* Features Section */
 
-.features-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    color: #28a745;
-    text-align: center; /* Center the heading */
-}
-
-.features-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-grow: 1;
-    padding: 50px 20px;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 .features {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
     gap: 20px;
     max-width: 100%;
     width: 100%;
@@ -150,7 +130,6 @@ footer {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
     text-align: center;
     transition: transform 0.3s ease-in-out;
 }
@@ -171,9 +150,22 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    header .logo h1 {
-        font-size: 2rem;
+    .features {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+        grid-template-rows: repeat(3, 1fr); /* 3 rows for smaller screens */
     }
+
+    .feature-box {
+        width: 100%; /* Full width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .features {
+        grid-template-columns: 1fr; /* 1 column for very small screens */
+        grid-template-rows: repeat(6, 1fr); /* 6 rows for very small screens */
+    }
+}
 
     nav ul {
         flex-direction: column;
