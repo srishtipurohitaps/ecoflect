@@ -112,3 +112,235 @@ footer {
     padding: 20px 0;
     text-align: center;
 }
+
+/* Features Section */
+
+.features-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #28a745;
+    text-align: center; /* Center the heading */
+}
+
+.features-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 50px 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.features {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 100%;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.feature-box {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+}
+
+.feature-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .logo h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-content h2 {
+        font-size: 1.7rem;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-box {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .chatbot-iframe {
+        height: 400px;
+    }
+
+    .home-container h2 {
+        font-size: 1.7rem;
+    }
+}
+
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+form input, form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+form button {
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+/* Resources Page */
+.resources-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.resource-item {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.resource-item:hover {
+    transform: translateY(-5px);
+}
+
+.resource-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.resource-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Reminders Page */
+.reminder-list ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.reminder-list li {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.reminder-list li:hover {
+    transform: translateY(-5px);
+}
+
+.reminder-list li h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.reminder-list li p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .logo h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chatbot-iframe {
+        height: 400px;
+    }
+
+    .feature-box {
+        width: 90%;
+    }
+
+    .resource-item, .reminder-list li {
+        width: 90%;
+    }
+
+    form {
+        width: 100%;
+    }
+}
